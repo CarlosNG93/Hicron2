@@ -5,6 +5,7 @@ const cors = require("cors");
 
 const errorHandler = require("_middleware/error-handler");
 const sequelize = require("sequelize");
+const db = require("./_helpers/db");
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -21,7 +22,7 @@ const port =
   process.env.NODE_ENV === "production" ? process.env.PORT || 80 : 3000;
 //app.listen(port, () => console.log("Server listening on port " + port));
 
-sequelize
+db.sequelize
   .sync({ force: false })
   .then(() => {
     console.log(`Database & tables created!`);

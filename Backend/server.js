@@ -23,7 +23,7 @@ const port =
 //app.listen(port, () => console.log("Server listening on port " + port));
 
 db.sequelize
-  .sync({ force: false })
+  .sync({ force: true })
   .then(() => {
     console.log(`Database & tables created!`);
     app.listen(3000, () =>

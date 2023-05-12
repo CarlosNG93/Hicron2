@@ -1,18 +1,18 @@
 ﻿{
-    "dbName": "users",
-    "dbConfig": {
-        "server": "localhost",
-        "options": {
-            "port": 5432,
-            "trustServerCertificate": true
-        },
-        "authentication": {
-            "type": "default",
-            "options": {
-                "userName": "canunez-",
-                "password": ""
-            }
-        }
+  "dbName": "users",
+  "dbConfig": {
+    "server": "localhost",
+    "options": {
+      "port": 5432,
+      "trustServerCertificate": true
     },
-    "secret": "THIS IS USED TO SIGN AND VERIFY JWT TOKENS, REPLACE IT WITH YOUR OWN SECRET, IT CAN BE ANY STRING"
+    "authentication": {
+      "type": "default",
+      "options": {
+        "userName": "carlo",
+        "password": "Tabothebest1"
+      }
+    }
+  },
+  "secret": "THIS IS USED TO SIGN AND VERIFY JWT TOKENS, REPLACE IT WITH YOUR OWN SECRET, IT CAN BE ANY STRING"
 }

@@ -19,10 +19,10 @@ app.use(errorHandler);
 // start server
 const port =
   process.env.NODE_ENV === "production" ? process.env.PORT || 80 : 3000;
-app.listen(port, () => console.log("Server listening on port " + port));
+//app.listen(port, () => console.log("Server listening on port " + port));
 
 sequelize
-  .sync({ force: true })
+  .sync({ force: false })
   .then(() => {
     console.log(`Database & tables created!`);
     app.listen(3000, () =>

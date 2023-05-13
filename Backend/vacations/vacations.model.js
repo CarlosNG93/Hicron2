@@ -1,20 +1,20 @@
-const { dataTypes } = require("sequelize");
+const { DataTypes } = require("sequelize");
 
 module.exports = model;
 
 function model(sequelize) {
   const vacations = {
     Id: {
-      type: dataTypes.INTEGER,
+      type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true,
       autoIncrement: true,
     },
-    start_date: { type: dataTypes.DATE, allowNull: false },
-    end_date: { type: dataTypes.DATE, allowNull: false },
-    state: { type: dataTypes.STRING, allowNull: false },
+    start_date: { type: DataTypes.DATE, allowNull: false },
+    end_date: { type: DataTypes.DATE, allowNull: false },
+    state: { type: DataTypes.STRING, allowNull: false },
     user_id: {
-      type: dataTypes.INTEGER,
+      type: DataTypes.INTEGER,
       allowNull: false,
       references: { model: "users", key: "Id" },
     },

@@ -6,7 +6,7 @@ const db = require("_helpers/db");
 const validateRequest = require("_middleware/validate-request");
 const vacationService = require("./vacations.service");
 const authorize = require("_middleware/authorize");
-const Role = require("_helpers/role");
+
 
 router.get("/", authorize(), getAll);
 router.get("/:id", authorize(), getById);

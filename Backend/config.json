@@ -9,7 +9,7 @@
     "authentication": {
       "type": "default",
       "options": {
-        "userName": "carlo",
+        "userName": "postgres",
         "password": "Tabothebest1"
       }
     }

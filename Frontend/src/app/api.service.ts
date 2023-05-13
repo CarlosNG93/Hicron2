@@ -7,7 +7,7 @@ import { User, Vacation } from './_models';
   providedIn: 'root'
 })
 export class ApiService {
-  private SERVER_URL = 'http://localhost:3000/api';
+  private SERVER_URL = 'http://localhost:3000/';
 
   constructor(private http: HttpClient) {}
 
